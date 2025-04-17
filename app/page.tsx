@@ -37,7 +37,7 @@ export default function Home() {
 							<div className="flex flex-col items-center pt-4 ">
 								<div className="text-3xl font-bold py-2">Everything you need to stay connected</div>
 								<div className="text-xl text-neutral-600">
-									ChatWave combines the best messaging features with a beautiful, intuitive interface
+									Parley combines the best messaging features with a beautiful, intuitive interface
 								</div>
 							</div>
 							<div className="flex flex-col lg:flex-row w-full sm:items-start py-5">
