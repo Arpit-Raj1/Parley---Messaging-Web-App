@@ -1,9 +1,10 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Phone, MessageSquare, Shield } from 'lucide-react';
+import { Phone, MessageSquare, Shield, Github } from 'lucide-react';
 import FeatureElement from '@/components/featureElement';
 import HomePageChat from '@/components/homePageChat';
 import HomeNavbar from '@/components/homeNavbar';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -29,13 +30,13 @@ export default function Home() {
 							<HomePageChat />
 						</section>
 						<section
-							className="flex flex-col items-center bg-neutral-100 min-h-[50vh] px-4 lg:px-10 xl:px-30 py-16 md:py-32 "
+							className="flex flex-col items-center bg-neutral-100 min-h-[50vh] px-4 py-16 lg:px-10 xl:px-30 md:py-32 mt-10 lg:mt-0"
 							id="features"
 						>
 							<div className="bg-neutral-900 py-2 px-3 text-white font-semibold rounded-md">Features</div>
 							<div className="flex flex-col items-center pt-4 ">
 								<div className="text-3xl font-bold py-2">Everything you need to stay connected</div>
-								<div className="text-xl text-center text-neutral-600">
+								<div className="text-xl text-neutral-600">
 									ChatWave combines the best messaging features with a beautiful, intuitive interface
 								</div>
 							</div>
@@ -57,7 +58,31 @@ export default function Home() {
 								/>
 							</div>
 						</section>
-						<section></section>
+						<section>
+							<div className="flex flex-row min-h-[25vh] px-4 lg:px-10 xl:px-30 py-10" id="contact">
+								{/* logo + Name */}
+								<div>
+									<Link href={'./'}>
+										<div className="text-xl sm:text-2xl font-bold flex gap-2 items-center">
+											<Image src="/message.svg" alt="Message Icon" width={28} height={28} />
+											Parley
+										</div>
+									</Link>
+									<div className="text-neutral-600">Connect with anyone anywhere</div>
+								</div>
+
+								{/* Contacts */}
+								<div className="flex justify-end w-full align-bottom ">
+									<Link
+										href={'https://github.com/Arpit-Raj1/Parley---Messaging-Web-App'}
+										className="p-2"
+									>
+										<Github className="inline align-bottom" height={30} width={30} />
+										<div className="underline inline text-2xl p-2">Github</div>
+									</Link>
+								</div>
+							</div>
+						</section>
 					</main>
 				</div>
 			</div>
