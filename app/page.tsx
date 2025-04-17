@@ -58,6 +58,8 @@ export default function Home() {
 								/>
 							</div>
 						</section>
+
+						{/* Footer */}
 						<section>
 							<div className="flex flex-row min-h-[25vh] px-4 lg:px-10 xl:px-30 py-10" id="contact">
 								{/* logo + Name */}
